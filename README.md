@@ -1,10 +1,6 @@
 # Geting started with Azure Blob storage using Form builder
 
----
-
 ## Requirements
-
----
 
 + Azure subscription or free trial account
   + [Azure Storage Account](https://azure.microsoft.com/en-us/free/)
