@@ -40,15 +40,19 @@
 1. Choose the **Create a New Storage Account** button at the bottom of the Azure Storage dialog box.
 
 ![creating a storage](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Create%20Storage.PNG "create storage account")
+
 2. Fill out the **Create Storage Account** dialog box and then select **Create** button.
 
 ![Fill Form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Fill%20up%20the%20form.PNG "Fill Form")
+
 3. Choose the added **storage** in the list, and select **Add**.
 
 ![Add Storage](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/add%20storage.PNG "Add storage")
+
 4. This will Take **some time**.
 
 ![loading](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Loading%20bar.PNG "loading")
+
 5. The storage connected service appears under the **Connected Services** node of your project.
 
 ![Added Service](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/show.PNG "Added Service")
