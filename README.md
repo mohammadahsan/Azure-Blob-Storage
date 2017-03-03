@@ -16,3 +16,14 @@
 
 ![Win Forms Creation](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Project%20dialog.PNG "Creatinga Win forms Project")
 4. Select **OK**.
+
+## Use Connected Services to connect to an Azure storage account
+
+1. In the **Solution Explorer**, right-click the project, and from the context menu, select **Add->Connected Service**.
+
+![Connecting Azure Storage Account]("Connecting Azure Storage Account")
+
+2. On the **Add Connected Service** dialog, select **Azure Storage**. 
+  + For visual studio 2015 select **Azure Storage** and then select **Configure**.
+![Adding Account]("Adding Account") 
+3. 
