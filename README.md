@@ -13,5 +13,5 @@
 1. Open Visual Studio
 2. Select **File->New->Project** from the main menu
 3. On the **New Project** dialog, specify the options as highlighted in the following figure:
-![Win Forms Creation](Azure-Blob-Storage/Images/1.PNG "Creatinga Win forms Project")
+![Win Forms Creation](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/1.PNG "Creatinga Win forms Project")
 4. Select **OK**.
