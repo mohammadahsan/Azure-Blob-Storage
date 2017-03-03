@@ -24,4 +24,17 @@
 2. On the **Add Connected Service** dialog, select **Azure Storage**. 
   + For visual studio 2015 select **Azure Storage** and then select **Configure**.
 ![Adding Account](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Cloud%20storage.PNG "Adding Account") 
-3. 
+3. Select **Reenter your credentials**.
+![Reenter Credentials](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/credentials.PNG "Enter")
+4. Enter Azure account **Email** and **password**
+![email & password](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Entering%20Credentials.PNG "email & pass")
+
+## Creating an Azure Blob Storage account (non-classic version)
+1. Choose the **Create a New Storage Account** button at the bottom of the Azure Storage dialog box.
+![creating a storage](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Create%20Storage.PNG "create storage account")
+2. Fill out the **Create Storage Account** dialog box and then select **Create** button.
+![6]( "6")
+3. Choose the added **storage** in the list, and select **Add**.
+![7]( "7")
+4. The storage connected service appears under the **Connected Services** node of your project.
+![8]( "8")
