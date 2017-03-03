@@ -20,8 +20,8 @@
 ## Use Connected Services to connect to an Azure storage account
 
 1. In the **Solution Explorer**, right-click the project, and from the context menu, select **Add->Connected Service**.
-![Connecting Azure Storage Account](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Adding%20Connected%20Service.png"Connecting Azure Storage Account")
+![Connecting Azure Storage Account](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Adding%20Connected%20Service.png "Connecting Azure Storage Account")
 2. On the **Add Connected Service** dialog, select **Azure Storage**. 
   + For visual studio 2015 select **Azure Storage** and then select **Configure**.
-![Adding Account](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Cloud%20storage.PNG"Adding Account") 
+![Adding Account](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Cloud%20storage.PNG "Adding Account") 
 3. 
