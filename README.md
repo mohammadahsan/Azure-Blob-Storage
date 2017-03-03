@@ -9,3 +9,9 @@
 + [Microsoft Azure Storage Connected Service] (https://marketplace.visualstudio.com/items?itemName=MicrosoftCloudExplorer.MicrosoftAzureStorageConnectedService) 
   + [How to install] (https://marketplace.visualstudio.com/items?itemName=MicrosoftCloudExplorer.MicrosoftAzureStorageConnectedService)
 
+## Setting up The WorkSpace
+1. Open Visual Studio
+2. Select **File->New->Project** from the main menu
+3. On the **New Project** dialog, specify the options as highlighted in the following figure:
+**Image**
+4. Select **OK**.
