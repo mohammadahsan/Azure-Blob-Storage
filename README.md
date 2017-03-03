@@ -46,6 +46,7 @@
 ![Add Storage](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/add%20storage.PNG "Add storage")
 
 4. This will Take **some time**.
+
 ![loading](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Loading%20bar.PNG "loading")
 
 5. The storage connected service appears under the **Connected Services** node of your project.
