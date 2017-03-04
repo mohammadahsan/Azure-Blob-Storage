@@ -271,7 +271,7 @@ Debug and run the Code, By Clicking on the `button` **delete blob** will _delete
 2. Add a `button` from **toolbox** and name it as **delete container**
 ![del c button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20a%20container/button.PNG "del c button")
 
-3. Right Click the `button` and select **View Code<>** 
+3. Right Click the `button` and select **View Code** 
 ![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20a%20container/view%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
@@ -310,4 +310,4 @@ Debug and run the Code, By Clicking on the `button` **delete conotainer** will _
 ![name](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/name.PNG "name")
 
 5. Successfule Deletion of the **Storage Account**
-![successful](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/successful%20deletion.PNG "successful")
+![successful](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/successful%20deletion1.PNG "successful")
