@@ -82,10 +82,10 @@ using Microsoft.WindowsAzure.Storage.Blob; // Namespace for Blob storage types
 1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
 ![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
 
-2. Add a `button` from **toolbox** and name and name it as **Create Container**
+2. Add a `button` from **toolbox** and name it as **Create Container**
 ![container](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/create%20button1.PNG "container")
 
-3. Right Click the `button` and select **View Code<>** 
+3. Right Click the `button` and select **View Code** 
 ![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/button%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
@@ -139,7 +139,7 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
 ![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/uploading%20data%20to%20blob/view%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
-![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/uploading%20data%20to%20blob/path.PNG "addin code")
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/uploading%20data%20to%20blob/path1.PNG "addin code")
 ```C#
 // Retrieve storage account from connection string.
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
