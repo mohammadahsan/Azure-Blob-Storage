@@ -109,4 +109,4 @@ By default, the new container is private, meaning that you must specify your sto
 container.SetPermissions(
     new BlobContainerPermissions { PublicAccess = BlobContainerPublicAccessType.Blob });
 ```
-5. Debug and run the Code Clicking on the `button` **Create Container** will _create a Container_ on the Storage.
+Debug and run the Code Clicking on the `button` **Create Container** will _create a Container_ on the Storage.
