@@ -130,7 +130,6 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
 ## Uploading data to that container
 
 1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
-
 ![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
 
 2. Add a `button` from **toolbox** and name it as **Upload**
