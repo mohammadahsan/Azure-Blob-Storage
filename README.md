@@ -114,6 +114,18 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
 
 ![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/generated.PNG "Generated Cntainer")
 
+## Seeing what containers exist within the storage account.
+
+1. Sign in to the [Azure portal](https://portal.azure.com/)
+
+2. Select **SHOW MENU**, & choose **All Resources** and click on **Storage Account**.
+![menu](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/Menu.PNG "menu")
+
+3. Slide down to **Conatainer**
+!slide](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/delt.PNG "slide")
+
+4. Under Blob Service Select **Containers**, There is the List of Existing containers.
+![containers](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/conatainers.PNG "containers")
 
 ## Uploading data to that container
 
@@ -282,3 +294,20 @@ Debug and run the Code, By Clicking on the `button` **delete blob** will _delete
 Debug and run the Code, By Clicking on the `button` **delete conotainer** will _delete the container_ from the Storage.
 
 ![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/delete.PNG "deleted")
+
+
+## Deleting the storage account
+
+1. Sign in to the [Azure portal](https://portal.azure.com/)
+
+2. Select **SHOW MENU**, & choose **All Resources** and click on **Storage Account**.
+![menu](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/resourses.PNG "menu")
+
+3. Click on **Overview** on the top right corner click **Delete**
+![delete](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/Delete.PNG "delete")
+
+4. Enter **Name of the storage** you want to delete.
+![name](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/name.PNG "name")
+
+5. Successfule Deletion of the **Storage Account**
+![successful](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/successful%20deletion.PNG "successful")
