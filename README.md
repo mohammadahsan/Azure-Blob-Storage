@@ -90,7 +90,6 @@ using Microsoft.WindowsAzure.Storage.Blob; // Namespace for Blob storage types
 
 4. Add this snippet inside `button`onclick Event.
 ![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/adding%20snippet.PNG "addin code")
-
 ```C#
 // Retrieve storage account from connection string.
 CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
