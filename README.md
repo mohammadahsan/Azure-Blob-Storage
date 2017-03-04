@@ -111,7 +111,7 @@ container.SetPermissions(
 ```
 
 Debug and run the Code, By Clicking on the `button` **Create Container** will _create a Container_ on the Storage.
-
+![form click1](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/form%20clicks/create%20click.PNG "click1")
 ![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/generated.PNG "Generated Cntainer")
 
 ## Seeing what containers exist within the storage account.
@@ -130,6 +130,7 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
 ## Uploading data to that container
 
 1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
+
 ![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
 
 2. Add a `button` from **toolbox** and name it as **Upload**
@@ -161,7 +162,7 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
             }
 ```
 Debug and run the Code, By Clicking on the `button` **upload** will _upload_ on the Storage.
-
+![upload click](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/form%20clicks/upload%20click.PNG "upload click")
 ![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/uploading%20data%20to%20blob/blob.PNG "Generated Cntainer")
 
 ## Seeing items are inside of that container
@@ -223,7 +224,7 @@ Debug and run the Code, By Clicking on the `button` **upload** will _upload_ on 
                 }
 ```
 Debug and run the Code, By Clicking on the `button` **list blobs** will list the contents of the container on console.
-
+![list click](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/form%20clicks/list%20click.PNG "list click")
 ![listed](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/listed.PNG "listed")
 
 ## Deleting an item in that container
@@ -259,7 +260,7 @@ Debug and run the Code, By Clicking on the `button` **list blobs** will list the
 
 
 Debug and run the Code, By Clicking on the `button` **delete blob** will _delete the item_ on the Storage.
-
+![delete click](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/form%20clicks/delete%20click1.PNG"delete click")
 ![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20an%20item%20in%20container/deleted.PNG "deleted")
 
 
@@ -292,7 +293,7 @@ Debug and run the Code, By Clicking on the `button` **delete blob** will _delete
 ```
 
 Debug and run the Code, By Clicking on the `button` **delete conotainer** will _delete the container_ from the Storage.
-
+![del con click](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/form%20clicks/delete%20container%20click.PNG "del con click")
 ![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20a%20container/delete.PNG "deleted")
 
 
