@@ -47,3 +47,19 @@
 
 4. The storage connected service appears under the **Connected Services** node of your project.
 ![Added Service](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/show.PNG "Added Service")
+
+## Configure your storage connection string
+To configure your connection string, open the `app.config` file from **Solution Explorer** in Visual Studio. Add the contents of the <appSettings> element shown below. Replace account-name with the name of your storage account, and account-key with your account access key:
+
+``` C#
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <appSettings>
+        <!-- Azure Storage: blobstoragetest1 -->
+        <add key="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=blobstoragetest1;AccountKey=Nq2Z5CGL+vT5RrbezP/TboH0XzYzmvGDs1OGHM1nTj8J94MZc/XUVbUCY9arpp5xx/227yBa+SmGDXPx1obnqg==" />
+    </appSettings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+</configuration>
+```
