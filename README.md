@@ -43,10 +43,10 @@
 ![Fill Form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Fill%20up%20the%20form.PNG "Fill Form")
 
 3. Choose the added **storage** in the list, and select **Add**.
-![Add Storage](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/add%20storage.PNG "Add storage")
+![Add Storage](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/add%20storage.PNG "Add storage")
 
 4. The storage connected service appears under the **Connected Services** node of your project.
-![Added Service](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/show.PNG "Added Service")
+![Added Service](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/show.PNG "Added Service")
 
 ## Configure your storage connection string
 To configure your connection string, open the `app.config` file from **Solution Explorer** in Visual Studio. Add the contents of the `appSettings` element shown below. 
@@ -64,7 +64,7 @@ To configure your connection string, open the `app.config` file from **Solution 
 </configuration>
 ```
 
-![App settings](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Connection%20String.PNG "App settings")
+![App settings](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Connection%20String.PNG "App settings")
 
 Replace **account-name** with the name of your `storage account`, 
 Replace **account-key** with your `account access key`:
@@ -80,16 +80,16 @@ using Microsoft.WindowsAzure.Storage.Blob; // Namespace for Blob storage types
 ## Creating a container in that storage account
 
 1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
-![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
 
 2. Add a `button` from **toolbox** and name and name it as **Create Container**
-![container](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/create%20button1.PNG "container")
+![container](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/create%20button1.PNG "container")
 
 3. Right Click the `button` and select **View Code<>** 
-![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/button%20code.png "View Code")
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/button%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
-![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/adding%20snippet.PNG "addin code")
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/adding%20snippet.PNG "addin code")
 ```C#
 // Retrieve storage account from connection string.
 CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
@@ -112,34 +112,34 @@ container.SetPermissions(
 
 Debug and run the Code, By Clicking on the `button` **Create Container** will _create a Container_ on the Storage.
 
-![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/generated.PNG "Generated Cntainer")
+![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/generated.PNG "Generated Cntainer")
 
 ## Seeing what containers exist within the storage account.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/)
 
 2. Select **SHOW MENU**, & choose **All Resources** and click on **Storage Account**.
-![menu](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/Menu.PNG "menu")
+![menu](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/Menu.PNG "menu")
 
 3. Slide down to **Conatainer**
-!slide](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/delt.PNG "slide")
+!slide](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/delt.PNG "slide")
 
 4. Under Blob Service Select **Containers**, There is the List of Existing containers.
-![containers](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/conatainers.PNG "containers")
+![containers](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/conatainers.PNG "containers")
 
 ## Uploading data to that container
 
 1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
-![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
 
 2. Add a `button` from **toolbox** and name it as **Upload**
-![upload button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/button.PNG "uploade")
+![upload button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/uploading%20data%20to%20blob/button.PNG "uploade")
 
 3. Right Click the `button` and select **View Code<>** 
-![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/view%20code.png "View Code")
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/uploading%20data%20to%20blob/view%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
-![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/path.PNG "addin code")
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/uploading%20data%20to%20blob/path.PNG "addin code")
 ```C#
 // Retrieve storage account from connection string.
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
@@ -162,31 +162,31 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
 ```
 Debug and run the Code, By Clicking on the `button` **upload** will _upload_ on the Storage.
 
-![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/blob.PNG "Generated Cntainer")
+![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/uploading%20data%20to%20blob/blob.PNG "Generated Cntainer")
 
 ## Seeing items are inside of that container
 
 ### First Setting the console to see output
 
 1. In the **Solution Explorer**, right-click the project, and from the context menu, select **properties**. 
-![properties](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/click%20properties.png "properties")
+![properties](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/click%20properties.png "properties")
 
 2. Under the **application Settings**, select **output type** as **console application**
-![console application](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/properties.png "console application")
+![console application](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/properties.png "console application")
 
 ### Listing the items in a container
 
 1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
-![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
 
 2. Add a `button` from **toolbox** and name it as **List Blobs**
-![upload button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/add%20button.PNG "uploade")
+![upload button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/add%20button.PNG "uploade")
 
 3. Right Click the `button` and select **View Code<>** 
-![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/view%20code.png "View Code")
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/view%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
-![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/add%20sniping.PNG "addin code")
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/add%20sniping.PNG "addin code")
 ``` C#
 // Retrieve storage account from connection string.
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
@@ -224,21 +224,21 @@ Debug and run the Code, By Clicking on the `button` **upload** will _upload_ on 
 ```
 Debug and run the Code, By Clicking on the `button` **list blobs** will list the contents of the container on console.
 
-![listed](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/listed.PNG "listed")
+![listed](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/listed.PNG "listed")
 
 ## Deleting an item in that container
 
 1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
-![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
 
 2. Add a `button` from **toolbox** and name it as **delete blob**
-![del button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20an%20item%20in%20container/button.PNG "del button")
+![del button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20an%20item%20in%20container/button.PNG "del button")
 
 3. Right Click the `button` and select **View Code<>** 
-![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20an%20item%20in%20container/view%20code.png "View Code")
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20an%20item%20in%20container/view%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
-![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20an%20item%20in%20container/adding%20snippet.PNG "addin code")
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20an%20item%20in%20container/adding%20snippet.PNG "addin code")
 ``` C#
 // Retrieve storage account from connection string.
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
@@ -260,22 +260,22 @@ Debug and run the Code, By Clicking on the `button` **list blobs** will list the
 
 Debug and run the Code, By Clicking on the `button` **delete blob** will _delete the item_ on the Storage.
 
-![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20an%20item%20in%20container/deleted.PNG "deleted")
+![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20an%20item%20in%20container/deleted.PNG "deleted")
 
 
 ## Deleting the container
 
 1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
-![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
 
 2. Add a `button` from **toolbox** and name it as **delete container**
-![del c button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/button.PNG "del c button")
+![del c button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20a%20container/button.PNG "del c button")
 
 3. Right Click the `button` and select **View Code<>** 
-![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/view%20code.png "View Code")
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20a%20container/view%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
-![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/sniiping.PNG "addin code")
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20a%20container/sniiping.PNG "addin code")
 ``` C#
 // Retrieve storage account from connection string.
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
@@ -293,7 +293,7 @@ Debug and run the Code, By Clicking on the `button` **delete blob** will _delete
 
 Debug and run the Code, By Clicking on the `button` **delete conotainer** will _delete the container_ from the Storage.
 
-![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/delete.PNG "deleted")
+![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20a%20container/delete.PNG "deleted")
 
 
 ## Deleting the storage account
@@ -301,13 +301,13 @@ Debug and run the Code, By Clicking on the `button` **delete conotainer** will _
 1. Sign in to the [Azure portal](https://portal.azure.com/)
 
 2. Select **SHOW MENU**, & choose **All Resources** and click on **Storage Account**.
-![menu](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/resourses.PNG "menu")
+![menu](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/resourses.PNG "menu")
 
 3. Click on **Overview** on the top right corner click **Delete**
-![delete](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/Delete.PNG "delete")
+![delete](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/Delete.PNG "delete")
 
 4. Enter **Name of the storage** you want to delete.
-![name](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/name.PNG "name")
+![name](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/name.PNG "name")
 
 5. Successfule Deletion of the **Storage Account**
-![successful](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Seeing%20and%20deleting%20storage/successful%20deletion.PNG "successful")
+![successful](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/successful%20deletion.PNG "successful")
