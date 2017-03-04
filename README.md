@@ -68,3 +68,46 @@ To configure your connection string, open the `app.config` file from **Solution 
 
 Replace **account-name** with the name of your `storage account`, 
 Replace **account-key** with your `account access key`:
+
+## Add namespace declarations
+Add the following using statements to the top of the form1.cs file:
+``` C#
+using Microsoft.Azure; // Namespace for CloudConfigurationManager
+using Microsoft.WindowsAzure.Storage; // Namespace for CloudStorageAccount
+using Microsoft.WindowsAzure.Storage.Blob; // Namespace for Blob storage types
+```
+
+## Creating a container in that storage account
+
+1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+
+2. Add a `button` from **toolbox** and name and name it as **Create Container**
+![container](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/create%20button1.PNG "container")
+
+3. Right Click the `button` and select **View Code<>** 
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/button%20code.png "View Code")
+
+4. Add this snippet inside `button`onclick Event.
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/adding%20snippet.PNG "addin code")
+
+```C#
+// Retrieve storage account from connection string.
+CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
+    CloudConfigurationManager.GetSetting("StorageConnectionString"));
+
+// Create the blob client.
+CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+
+// Retrieve a reference to a container. (Replace mycontainer with name of your container)
+CloudBlobContainer container = blobClient.GetContainerReference("mycontainer");
+
+// Create the container if it doesn't already exist.
+container.CreateIfNotExists();
+```
+
+By default, the new container is private, meaning that you must specify your storage access key to download blobs from this container. If you want to make the files within the container available to everyone, you can set the container to be public using the following code:
+``` C#
+container.SetPermissions(
+    new BlobContainerPermissions { PublicAccess = BlobContainerPublicAccessType.Blob });
+```
