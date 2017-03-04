@@ -122,9 +122,9 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
 ![menu](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/Menu.PNG "menu")
 
 3. Slide down to **Conatainer**
-!slide](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/delt.PNG "slide")
+![slide](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/delt.PNG "slide")
 
-4. Under Blob Service Select **Containers**, There is the List of Existing containers.
+4. Under **_Blob Service_** Select **Containers**, _There is the List of Existing containers_.
 ![containers](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/Seeing%20and%20deleting%20storage/conatainers.PNG "containers")
 
 ## Uploading data to that container
@@ -148,7 +148,7 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
             // Create the blob client.
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
-            // Retrieve reference to a previously created container.
+            // Retrieve reference to a previously created container.Replace 'mycontainer' with name of your container
             CloudBlobContainer container = blobClient.GetContainerReference("mycontainer");
 
             // Retrieve reference to a blob named "myblob".
