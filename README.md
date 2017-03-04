@@ -105,11 +105,9 @@ CloudBlobContainer container = blobClient.GetContainerReference("mycontainer");
 // Create the container if it doesn't already exist.
 container.CreateIfNotExists();
 ```
-
 By default, the new container is private, meaning that you must specify your storage access key to download blobs from this container. If you want to make the files within the container available to everyone, you can set the container to be public using the following code:
 ``` C#
 container.SetPermissions(
     new BlobContainerPermissions { PublicAccess = BlobContainerPublicAccessType.Blob });
 ```
-
 5. Debug and run the Code Clicking on the `button` **Create Container** will _create a Container_ on the Storage.
