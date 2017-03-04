@@ -113,3 +113,41 @@ container.SetPermissions(
 Debug and run the Code, By Clicking on the `button` **Create Container** will _create a Container_ on the Storage.
 
 ![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/generated.PNG "Generated Cntainer")
+
+
+## Uploading data to that container
+
+1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+
+2. Add a `button` from **toolbox** and name it as **Upload**
+![upload button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/button.PNG "uploade")
+
+3. Right Click the `button` and select **View Code<>** 
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/view%20code.png "View Code")
+
+4. Add this snippet inside `button`onclick Event.
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/path.PNG "addin code")
+```C#
+// Retrieve storage account from connection string.
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
+                CloudConfigurationManager.GetSetting("StorageConnectionString"));
+
+            // Create the blob client.
+            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+
+            // Retrieve reference to a previously created container.
+            CloudBlobContainer container = blobClient.GetContainerReference("mycontainer");
+
+            // Retrieve reference to a blob named "myblob".
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference("myblob");
+
+            // Create or overwrite the "myblob" blob with contents from a local file. (Replace C:\users\.... With your file path)
+            using (var fileStream = System.IO.File.OpenRead(@"C:\Users\DELL\Desktop\icon48.png"))
+            {
+                blockBlob.UploadFromStream(fileStream);
+            }
+```
+Debug and run the Code, By Clicking on the `button` **upload** will _upload_ on the Storage.
+
+![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/blob.PNG "Generated Cntainer")
