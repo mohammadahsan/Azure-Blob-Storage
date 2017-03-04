@@ -49,9 +49,9 @@
 ![Added Service](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/show.PNG "Added Service")
 
 ## Configure your storage connection string
-To configure your connection string, open the `app.config` file from **Solution Explorer** in Visual Studio. Add the contents of the <appSettings> element shown below. Replace account-name with the name of your storage account, and account-key with your account access key:
+To configure your connection string, open the `app.config` file from **Solution Explorer** in Visual Studio. Add the contents of the `appSettings` element shown below. 
 
-``` C#
+``` xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <appSettings>
@@ -63,3 +63,6 @@ To configure your connection string, open the `app.config` file from **Solution 
     </startup>
 </configuration>
 ```
+![App settings]( "App settings")
+Replace **account-name** with the name of your `storage account`, 
+Replace **account-key** with your `account access key`:
