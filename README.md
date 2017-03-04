@@ -94,7 +94,7 @@ using Microsoft.WindowsAzure.Storage.Blob; // Namespace for Blob storage types
 // Retrieve storage account from connection string.
 CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
     CloudConfigurationManager.GetSetting("StorageConnectionString"));
-
+    
 // Create the blob client.
 CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
@@ -109,5 +109,7 @@ By default, the new container is private, meaning that you must specify your sto
 container.SetPermissions(
     new BlobContainerPermissions { PublicAccess = BlobContainerPublicAccessType.Blob });
 ```
-5. Debug and run the Code Clicking on the `button` **Create Container** will _create a Container_ on the Storage.
+
+Debug and run the Code, By Clicking on the `button` **Create Container** will _create a Container_ on the Storage.
+
 ![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/generated.PNG "Generated Cntainer")
