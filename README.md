@@ -249,3 +249,36 @@ Debug and run the Code, By Clicking on the `button` **list blobs** will list the
 Debug and run the Code, By Clicking on the `button` **delete blob** will _delete the item_ on the Storage.
 
 ![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20an%20item%20in%20container/deleted.PNG "deleted")
+
+
+## Deleting the container
+
+1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+
+2. Add a `button` from **toolbox** and name it as **delete container**
+![del c button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/button.PNG "del c button")
+
+3. Right Click the `button` and select **View Code<>** 
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/view%20code.png "View Code")
+
+4. Add this snippet inside `button`onclick Event.
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/sniiping.PNG "addin code")
+``` C#
+// Retrieve storage account from connection string.
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
+                CloudConfigurationManager.GetSetting("StorageConnectionString"));
+
+            // Create the blob client.
+            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+
+            // Retrieve reference to a previously created container. (replace 'mycontainer' with the container name.
+            CloudBlobContainer container = blobClient.GetContainerReference("mycontainer");
+
+            // Delete the container.
+            container.DeleteIfExists();
+```
+
+Debug and run the Code, By Clicking on the `button` **delete conotainer** will _delete the container_ from the Storage.
+
+![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/deleting%20a%20container/delete.PNG "deleted")
