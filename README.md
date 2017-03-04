@@ -63,6 +63,8 @@ To configure your connection string, open the `app.config` file from **Solution 
     </startup>
 </configuration>
 ```
-![App settings]( "App settings")
+
+![App settings](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Connection%20String.PNG "App settings")
+
 Replace **account-name** with the name of your `storage account`, 
 Replace **account-key** with your `account access key`:
