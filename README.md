@@ -21,7 +21,7 @@
 
 ## Use Connected Services to connect to an Azure storage account
 
-1. In the **Solution Explorer**, right-click the project, and from the context menu, select **Add->Connected Service**.
+1. In the **Solution Explorer**, right-click the reference node, and from the context menu, select **Add->Connected Service**.
 ![Connecting Azure Storage Account](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Adding%20Connected%20Service.png "Connecting Azure Storage Account")
 
 2. On the **Add Connected Service** dialog, select **Azure Storage**. 
@@ -151,3 +151,64 @@ Debug and run the Code, By Clicking on the `button` **Create Container** will _c
 Debug and run the Code, By Clicking on the `button` **upload** will _upload_ on the Storage.
 
 ![Generated](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/uploading%20data%20to%20blob/blob.PNG "Generated Cntainer")
+
+## Seeing items are inside of that container
+
+### First Setting the console to see output
+
+1. In the **Solution Explorer**, right-click the project, and from the context menu, select **properties**. 
+![properties](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/click%20properties.png "properties")
+
+2. Under the **application Settings**, select **output type** as **console application**
+![console application](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/properties.png "console application")
+
+### Listing the items in a container
+
+1. Open the `Forms.cs` file from **Solution Explorer** in Visual Studio.
+![open form](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/Creating%20Blob%20Storage/Open%20form.PNG "Opening form")
+
+2. Add a `button` from **toolbox** and name it as **List Blobs**
+![upload button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/add%20button.PNG "uploade")
+
+3. Right Click the `button` and select **View Code<>** 
+![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/view%20code.png "View Code")
+
+4. Add this snippet inside `button`onclick Event.
+![code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/add%20sniping.PNG "addin code")
+``` C#
+// Retrieve storage account from connection string.
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
+                CloudConfigurationManager.GetSetting("StorageConnectionString"));
+
+            // Create the blob client.
+            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+
+            // Retrieve reference to a previously created container. (replace 'mycontainer' with your container name) 
+            CloudBlobContainer container = blobClient.GetContainerReference("mycontainer");
+
+            // Loop over items within the container and output the length and URI.
+            foreach (IListBlobItem item in container.ListBlobs(null, false))
+            {
+                if (item.GetType() == typeof(CloudBlockBlob))
+                {
+                    CloudBlockBlob blob = (CloudBlockBlob)item;
+
+                    Console.WriteLine("Block blob of length {0}: {1}", blob.Properties.Length, blob.Uri);
+
+                }
+                else if (item.GetType() == typeof(CloudPageBlob))
+                {
+                    CloudPageBlob pageBlob = (CloudPageBlob)item;
+
+                    Console.WriteLine("Page blob of length {0}: {1}", pageBlob.Properties.Length, pageBlob.Uri);
+
+                }
+                else if (item.GetType() == typeof(CloudBlobDirectory))
+                {
+                    CloudBlobDirectory directory = (CloudBlobDirectory)item;
+
+                    Console.WriteLine("Directory: {0}", directory.Uri);
+                }
+```
+5. Debug and run the Code, By Clicking on the `button` **list blobs** will list the contents of the container on console.
+![listed](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/Editing/Images/listing%20blobs/listed.PNG "listed")
