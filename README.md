@@ -182,7 +182,7 @@ Debug and run the Code, By Clicking on the `button` **upload** will _upload_ on 
 2. Add a `button` from **toolbox** and name it as **List Blobs**
 ![upload button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/add%20button.PNG "uploade")
 
-3. Right Click the `button` and select **View Code<>** 
+3. Right Click the `button` and select **View Code** 
 ![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/listing%20blobs/view%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
@@ -234,7 +234,7 @@ Debug and run the Code, By Clicking on the `button` **list blobs** will list the
 2. Add a `button` from **toolbox** and name it as **delete blob**
 ![del button](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20an%20item%20in%20container/button.PNG "del button")
 
-3. Right Click the `button` and select **View Code<>** 
+3. Right Click the `button` and select **View Code** 
 ![view Code](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20an%20item%20in%20container/view%20code.png "View Code")
 
 4. Add this snippet inside `button`onclick Event.
@@ -259,7 +259,7 @@ Debug and run the Code, By Clicking on the `button` **list blobs** will list the
 
 
 Debug and run the Code, By Clicking on the `button` **delete blob** will _delete the item_ on the Storage.
-![delete click](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/form%20clicks/delete%20click1.PNG"delete click")
+![delete click](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/form%20clicks/delete%20click1.PNG "delete click")
 ![deleted](https://github.com/mohammadahsan/Azure-Blob-Storage/blob/master/Images/deleting%20an%20item%20in%20container/deleted.PNG "deleted")
 
 
